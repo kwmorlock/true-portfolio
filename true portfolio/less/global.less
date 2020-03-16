@@ -1,0 +1,225 @@
+
+* {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  
+  header {
+    background-color: @headerbackground;
+    width: 100%;
+   
+  }
+  
+  
+  
+  h1 {
+    font-size: 10.5rem;
+    color: @headerfont;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+    text-align: center;
+    @media @phone {
+      font-size: 5rem;
+    }
+  }
+  .replateh2 {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 3.3rem;
+    line-height: 1.4;
+    color: black;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto; 
+  }
+  
+  
+  .minicontainer {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid black;
+  }
+  
+  .firsttwo {
+      .flexin();
+    @media @phone {
+        .mixin1();
+    }
+    @media @tablet {
+      .mixin1();
+  }
+  }
+  .firstleft, .firstright{
+      .mixin4();
+  }
+  .secondtwo {
+      .flexin();
+      @media @phone {
+          .mixin2();
+      }
+      @media @tablet {
+          .mixin2();
+      }
+  }
+  .secondleft, .secondright{
+      .mixin4();
+  }
+  
+  .thirdtwo {
+      .flexin();
+      @media @phone {
+          .mixin1();
+      }
+      @media @tablet {
+          .mixin1();
+      }
+  }
+  .thirdleft, .thirdright{
+      .mixin4();
+  }
+  
+  
+  .firsttwoa {
+      .flexin();
+      @media @phone {
+          .mixin1();
+      }
+      @media @tablet {
+          .mixin1();
+      }
+  }
+  .firstlefta, .firstrighta{
+      .mixin3();
+  }
+  .secondtwoa {
+      .flexin();
+      @media @phone {
+          .mixin2();
+      }
+      @media @tablet {
+          .mixin2();
+      }
+  }
+  .secondlefta, .secondrighta{
+      .mixin3();
+  }
+  
+  .thirdtwoa {
+      .flexin();
+      @media @phone {
+          .mixin1();
+      }
+      @media @tablet {
+          .mixin1();
+      }
+  }
+  .thirdlefta, .thirdrighta{
+      .mixin3();
+  }
+  
+  .fourthtwoa {
+      .flexin();
+      @media @phone {
+          .mixin2();
+      }
+      @media @tablet {
+          .mixin2();
+      }
+  }
+  .fourthlefta, .fourthrighta{
+      .mixin3();
+  }
+  .fifthtwoa {
+      .flexin();
+      @media @phone {
+          .mixin1();
+      }
+      @media @tablet {
+          .mixin1();
+      }
+  }
+  .fifthlefta, .fifthrighta{
+      .mixin3();
+  }
+  
+  .sixthtwoa {
+      .flexin();
+      @media @phone {
+          .mixin2();
+      }
+      @media @tablet {
+          .mixin2();
+      }
+  }
+  .sixthlefta, .sixthrighta{
+      .mixin3();
+  }
+  
+  
+  .headerbutton{
+    .buttonstuff();
+    background-color: @headerbackground;
+    border-color: @headerfont;
+    color: @headerfont;
+    margin-top: -60px; 
+    width: 20%;
+  }
+  
+  button:hover{
+    color: fuchsia;
+    border-color: fuchsia;
+  }
+  
+  .bodybutton{
+  .buttonstuff();
+  background-color: @headerbackground;
+  border-color: @headerfont;
+  color: @headerfont;
+  margin-top: -30px; 
+  margin: 10px;
+  width: 50%;
+  }
+  
+  
+   @media (max-width:801px){
+   .headerbutton {
+   display:none;
+   }
+  }
+  
+  @media (min-width:801px){
+    .bodybutton {
+    display:none;
+    }
+   }
+  
+   //was 1100
+   @media (max-width:1500px) {
+       .headerbutton {
+       font-size:3.8rem;
+       }
+   }
+  
+//    @media (min-width:802px) {
+//     .headerbutton {
+//     font-size:3.0rem;
+//     }
+// }
